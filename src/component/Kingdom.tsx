@@ -1,9 +1,18 @@
 import { useParams } from "react-router-dom";
-import React from "react";
+import React, { useEffect } from "react";
 
 function Kingdom() {
   const { id } = useParams();
-  return <h1>Details for Kingdom: {id}</h1>;
+    
+  useEffect(() => {
+    console.log(id)
+  },[])
+
+  return(
+    <>
+    <div>{id}</div>
+    </>
+  );
 }
 
 export default Kingdom;

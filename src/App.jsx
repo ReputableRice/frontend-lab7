@@ -28,13 +28,13 @@ function App() {
   return (
     <BrowserRouter className="">
       {error && <div>{error}</div>}
-     <KingdomSelector data={data}/>
+      <KingdomSelector data={data} />
 
-        <Routes>
-          {data.map((kingdom, index) => (
-            <Route key={index} path={`/${kingdom.name.common}`} element={<Kingdom/>} />
-          ))}
-        </Routes>
+      <Routes>
+        {data.map((kingdom, index) => (
+          <Route key={index} path={`/kingdoms/${kingdom.cca2}`} element={<Kingdom />} />
+        ))}
+      </Routes>
     </BrowserRouter>
   )
 }
