@@ -32,7 +32,7 @@ function App() {
 
       <Routes>
         {data.map((kingdom, index) => (
-          <Route key={index} path={`/kingdoms/${kingdom.cca2}`} element={<Kingdom />} />
+          <Route key={index} path={`/countries/${kingdom.cca2}`} element={<Kingdom kingdom={kingdom} />} />
         ))}
       </Routes>
     </BrowserRouter>
