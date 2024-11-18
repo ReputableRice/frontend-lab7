@@ -7,7 +7,7 @@ export default function KingdomSelector({ data }) {
     //https://stackoverflow.com/a/70673631
     function handleChange(e) {
         if (e.target.value) {
-            navigate(`/countries/${e.target.value}`)
+            navigate(`/countries/${e.target.value}`, {state: {data}})
         }
         console.log("change kingsdoms")
     }
