@@ -15,7 +15,7 @@ function handleChange(e) {
     return (
         <>
             <select name="kingdoms" id="kingdoms" onChange={handleChange} className="border-neutral-900 border-4 rounded-lg mb-6">
-                <option value="">Pick a Kingdom</option>
+                <option value="">Select a Country</option>
                 {data.map((kingdom, index) => (
                     <option key={index} value={kingdom.cca2}>
                         {kingdom.name.common}
