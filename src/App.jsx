@@ -27,6 +27,7 @@ function App() {
 
   return (
     <BrowserRouter className="">
+      <p className='text-lg'>World Kingdoms</p>
       {error && <div>{error}</div>}
       <KingdomSelector data={data} />
 
